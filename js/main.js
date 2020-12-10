@@ -9,10 +9,10 @@ function change_visibility_sbutton(el){
     
     if (el === 0) {
         console.log("Görünmez")
-         search_button.style.display = "none";  
+         search_button.style.visibility = "hidden";  
     }else{
         console.log("Görünür")
-        search_button.style.display = "inline";
+        search_button.style.visibility = "visible";
     }
 
 }
