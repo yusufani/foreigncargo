@@ -11,7 +11,6 @@ body {
 .container {
     width: 80%;
     margin: auto;
-    overflow: hidden;
 }
 
 /*-----------Header-----------*/
@@ -20,26 +19,39 @@ header {
     top: 0;
     min-height: 70px;
     padding-top: 0.8%;
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
     z-index: 2;
     transition: background-color 0.2s, min-height 0.2s, padding-top 0.2s;
     -webkit-transition: background-color 0.2s, min-height 0.2s, padding-top 0.2s;     
 }
-header .logo {
+header #logo {
     float: left;
     color: rgb(241,241,241);
 }
 header nav {
-    float: right;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 14px;
 }
-header li {
-    float: left;
+header nav ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
-    padding: 10px 30px 0 30px;    
+    position: relative;
+}
+header nav ul li {
+    display:inline-block;
 }
 header nav a {
-    text-decoration: none;
-    color: rgb(241,241,241);
+    display:block;
+	padding: 0 10px;
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
     transition: color 0.3s ease-in;
     -webkit-transition: color 0.3s ease-in;   
 }
@@ -47,6 +59,37 @@ header nav a:hover {
     color: rgb(184, 184, 184);
 }
 
+/* Hide Dropdowns by Default */
+header nav ul ul {
+	display: none;
+    position: absolute; 
+	top: 50px; /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+header nav ul li:hover > ul {
+	display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+header nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+    position: relative;
+    background-color: rgba(35,35,35,1);
+}
+
+/* Second, Third and more Tiers	*/
+header nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+/* Change this in order to change the Dropdown symbol */
+header li > a:after { content:  ' +'; }
+header li > a:only-child:after { content: ''; }
 /*-----------ImageSlide-----------*/
 .imageSlide {
     position: relative;
