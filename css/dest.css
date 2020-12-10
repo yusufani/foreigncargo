@@ -1,11 +1,24 @@
 .title-hr hr {
     display: inline-block;
-    width: 30%;
+    width: 100%;
     margin: 5px 10px;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid blue;
+}
+.title-hr{
+    color: #ffffff;
 }
 
+table {
+    margin: auto;
+}
+td{
 
+    margin: auto;
+    padding: 10px;
+}
+td::before{
+    content: " • ";
+}
   
 .dest_title {
     display: flex;

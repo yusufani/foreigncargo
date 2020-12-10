@@ -207,11 +207,12 @@ header li > a:only-child:after { content: ''; }
     margin-bottom: 2%;
     text-align: center;
     justify-content: center;
-    background-color: rgb(89, 88, 88);
+    background-color: #F26419;
     padding: 40px;
 }
 #news .newsBox:nth-of-type(even) {
-    background-color: rgb(122, 122, 122);
+    background-color: #003f5a
+    ;
 }
 #news .newsBox h4 {
     font-size: 40px;
