@@ -16,44 +16,40 @@
     <header id="header">
         <div class="container">
             <div id="logo">
-                <img src="images/logo_tran_200x200.png"></img>
-                <!--<h1>Foreign Cargo</h1>-->
+                <img id="logo-image" src="images/logo_tran_200x200.png"></img>
+                <h1 id="logo-text">Foreign Cargo</h1>
             </div>
             <!--Navigation Bar-->
-            <nav>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">WordPress</a>
+                    <li><a href="#">Fleet</a>
                     <!-- First Tier Drop Down -->
                     <ul>
-                        <li><a href="#">Themes</a></li>
-                        <li><a href="#">Plugins</a></li>
-                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Aerial</a></li>
+                        <li><a href="#">Ships</a></li>
+                        <li><a href="#">Trucks</a></li>
                     </ul>        
                     </li>
-                    <li><a href="#">Web Design</a>
+                    <li><a href="#">Destinations</a>
                     <!-- First Tier Drop Down -->
                     <ul>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Links</a></li>
-                        <li><a href="#">Tutorials</a>
-                        <!-- Second Tier Drop Down -->
-                        <ul>
-                            <li><a href="#">HTML/CSS</a></li>
-                            <li><a href="#">jQuery</a></li>
-                            <li><a href="#">Other</a>
-                                <!-- Third Tier Drop Down -->
-                                <ul>
-                                    <li><a href="#">Stuff</a></li>
-                                    <li><a href="#">Things</a></li>
-                                    <li><a href="#">Other Stuff</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        </li>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">America</a></li>
                     </ul>
                     </li>
-                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">About Us</a>
+                        <!-- First Tier Drop Down -->
+                        <ul>
+                            <li><a href="#">Our History</a></li>
+                            <li><a href="#">Our Branches</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Statistics</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Track your Cargo</a></li>
                 </ul>
             </nav>
         </div>
@@ -100,14 +96,22 @@
         function scrollFunction() {
         if (window.screen.width > 768) {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("header").style.backgroundColor = "rgba(35,35,35,1)";
+                document.getElementById("header").style.backgroundColor = "rgba(12, 71, 103, 1)";
                 document.getElementById("header").style.minHeight = "60px";
-                document.getElementById("header").style.paddingTop = "0.6%";                     
+                document.getElementById("header").style.paddingTop = "0.6%";  
+                document.getElementById("logo-image").style.display = "none";  
+                document.getElementById('logo-text').style.marginTop = '0';
+                document.getElementById('logo-text').style.marginLeft = '0';
+                document.getElementById('nav-menu').style.marginTop = '0';
             }
             else {
-                document.getElementById("header").style.backgroundColor = "rgba(35,35,35,0)";
+                document.getElementById("header").style.backgroundColor = "rgba(12, 71, 103, 0)";
                 document.getElementById("header").style.minHeight = "70px";
                 document.getElementById("header").style.paddingTop = "0.8%"; 
+                document.getElementById("logo-image").style.display = "inline"; 
+                document.getElementById('logo-text').style.marginTop = '-80px';
+                document.getElementById('logo-text').style.marginLeft = '120px';  
+                document.getElementById('nav-menu').style.marginTop = '40px';
             }
         }
     }        
