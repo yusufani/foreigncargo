@@ -9,14 +9,13 @@ body {
     color: white;
 }
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 /*-----------Header-----------*/
 header {
     position: fixed;
-    top: 0;
     min-height: 70px;
     padding-top: 0.8%;
     width: 100%;
