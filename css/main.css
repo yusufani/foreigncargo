@@ -19,9 +19,8 @@ header {
     top: 0;
     min-height: 70px;
     padding-top: 0.8%;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    font-size: 16px;
     z-index: 2;
     transition: background-color 0.2s, min-height 0.2s, padding-top 0.2s;
     -webkit-transition: background-color 0.2s, min-height 0.2s, padding-top 0.2s;     
@@ -31,10 +30,7 @@ header #logo {
     color: rgb(241,241,241);
 }
 header nav {
-    position: absolute;
-    right: 10px;
-    top: 0px;
-    font-size: 14px;
+    float: right;
 }
 header nav ul {
     padding: 0;
@@ -44,14 +40,13 @@ header nav ul {
 }
 header nav ul li {
     display:inline-block;
+    padding: 10px 30px 20px 30px;  
 }
 header nav a {
     display:block;
-	padding: 0 10px;
-	color:#FFF;
-	font-size:20px;
-	line-height: 60px;
-	text-decoration:none;
+    color: rgb(241,241,241);
+    padding-top: 4px;
+    text-decoration:none;
     transition: color 0.3s ease-in;
     -webkit-transition: color 0.3s ease-in;   
 }
@@ -63,7 +58,7 @@ header nav a:hover {
 header nav ul ul {
 	display: none;
     position: absolute; 
-	top: 50px; /* the height of the main nav */
+    top: 50px; /* the height of the main nav */
 }
 
 /* Display Dropdowns on Hover */
@@ -84,7 +79,7 @@ header nav ul ul li {
 header nav ul ul ul li {
 	position: relative;
 	top:-60px; 
-	left:170px;
+    left:170px;
 }
 
 /* Change this in order to change the Dropdown symbol */

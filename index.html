@@ -94,20 +94,20 @@
         window.onscroll = function() {scrollFunction()};
         var loaders = document.getElementsByClassName('menua');
 
-            function scrollFunction() {
-                if (window.screen.width > 768) {
-                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        document.getElementById("header").style.backgroundColor = "rgba(35,35,35,1)";
-                        document.getElementById("header").style.minHeight = "60px";
-                        document.getElementById("header").style.paddingTop = "0.6%";                     
-                    }
-                    else {
-                        document.getElementById("header").style.backgroundColor = "rgba(35,35,35,0)";
-                        document.getElementById("header").style.minHeight = "70px";
-                        document.getElementById("header").style.paddingTop = "0.8%"; 
-                    }
-                }
+        function scrollFunction() {
+        if (window.screen.width > 768) {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("header").style.backgroundColor = "rgba(35,35,35,1)";
+                document.getElementById("header").style.minHeight = "60px";
+                document.getElementById("header").style.paddingTop = "0.6%";                     
             }
+            else {
+                document.getElementById("header").style.backgroundColor = "rgba(35,35,35,0)";
+                document.getElementById("header").style.minHeight = "70px";
+                document.getElementById("header").style.paddingTop = "0.8%"; 
+            }
+        }
+    }        
     </script>
 </body>
 </html>
