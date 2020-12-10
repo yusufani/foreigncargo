@@ -1,0 +1,13 @@
+.row{
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    }
+  .row div {
+    padding: 5%;
+  }
+
+.date{
+    color: #003f5a;
+    font-weight: bold;
+}
