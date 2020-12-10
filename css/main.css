@@ -28,6 +28,11 @@ header {
 header #logo {
     float: left;
     color: rgb(241,241,241);
+    display: inline;
+}
+header #logo img {
+    width: 120px;
+    height: 120px;
 }
 header nav {
     float: right;
@@ -79,7 +84,7 @@ header nav ul ul li {
 header nav ul ul ul li {
 	position: relative;
 	top:-60px; 
-    left:170px;
+    left:130px;
 }
 
 /* Change this in order to change the Dropdown symbol */
@@ -148,9 +153,9 @@ header li > a:only-child:after { content: ''; }
 }
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 10s;
+    -webkit-animation-duration: 1.5s;
     animation-name: fade;
-    animation-duration: 10s;
+    animation-duration: 1.5s;
 }
   
 @-webkit-keyframes fade {
