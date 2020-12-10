@@ -82,7 +82,7 @@ header nav ul ul li {
 	float:none;
 	display:list-item;
     position: relative;
-    background-color: rgb(41, 41, 41);
+    background-color: #2F4858;
 }
 
 /* Second, Third and more Tiers	*/
@@ -208,11 +208,11 @@ header li > a:only-child:after { content: ''; }
     margin-bottom: 2%;
     text-align: center;
     justify-content: center;
-    background-color: rgb(89, 88, 88);
+    background-color: #F26419;
     padding: 40px;
 }
 #news .newsBox:nth-of-type(even) {
-    background-color: rgb(122, 122, 122);
+    background-color: #003f5a;
 }
 #news .newsBox h4 {
     font-size: 40px;
@@ -224,12 +224,29 @@ header li > a:only-child:after { content: ''; }
     padding: 20px;
 }
 
-/*-----------mySlides Top Dist.-----------*/
-/* Hide the images by default */
-.mySlides {
-    display: none;
+.newsTable {
+    width: 80%;
+    margin: auto;
+}
+.newsTable td {
+    width: 40%;
+}
+.newsTable li {
+    width: 50%;
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 18px;
 }
 
+.title-hr hr {
+    display: inline-block;
+    width: 36%;
+    margin: 5px 10px;
+    border-top: 1px solid #e5e5e5;
+}
+.title-hr {
+    text-align: center;
+}
 /*-----------Download Button-----------*/
 .downloadButton {
     background-color: rgb(32, 46, 68);
@@ -245,6 +262,16 @@ header li > a:only-child:after { content: ''; }
     background-color: rgba(24, 34, 51, 0.842);
   }
 
+  .infoBtn {
+    background-color:    #003f5a;
+    border-radius: 11px;
+    padding:       15px 25px;
+    color:         #ffffff;
+    display:       inline-block;
+    text-align:    center;
+    text-decoration: none;
+  }
+ 
 /*-----------Footer-----------*/
 footer {
     padding: 20px;
