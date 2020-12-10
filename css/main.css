@@ -99,6 +99,25 @@ header nav ul ul ul li {
 header li > a:after { content:  ' +'; }
 header li > a:only-child:after { content: ''; }
 
+/*-----------Title Image-----------*/
+.titleHeader {
+    position: relative;
+    height: 20%;
+}
+
+.titleText {
+    position: absolute;
+    font-size: 100px;
+    top: 75%;
+    left: 8%;
+}
+.titleText2 {
+    position: absolute;
+    font-size: 20px;
+    top: 92%;
+    left: 8.5%;
+}
+
 /*-----------ImageSlide-----------*/
 .imageSlide {
     position: relative;

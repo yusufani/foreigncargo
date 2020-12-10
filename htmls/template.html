@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "keywords" content = "Cargo, Plane, Logistic" />
+    <meta name = "description" content = "The website of Foreign Cargo." />
+    <meta name="author" content="Created by Demirkan Korbey Baglamac and Yusuf Anı">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Source+Sans+Pro" rel="stylesheet">
+    <!--Image Slider-->
+    <script src="../js/slider.js"></script>
+    <!--Main Js-->
+    <script src="../js/main.js"></script>
+    <title>Foreign Cargo</title>
+</head>
+<body>
+    <!--Header-->
+    <header id="header">
+    <div class="container">
+        <div id="logo" style = "cursor: pointer;" onclick="location.href='index.html';">
+            <img id="logo-image" src="../images/logo_tran_200x200.png"></img>
+            <h1 id="logo-text">Foreign Cargo</h1>
+        </div>
+        <!--Navigation Bar-->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Fleet</a>
+                <!-- First Tier Drop Down -->
+                <ul>
+                    <li class="sub-menu"><a href="#">Aerial</a></li>
+                    <li class="sub-menu"><a href="#">Ships</a></li>
+                    <li class="sub-menu"><a href="#">Trucks</a></li>
+                </ul>        
+                </li>
+                <li><a href="htmls/destinations.html">Destinations</a>
+                <!-- First Tier Drop Down -->
+                <ul>
+                    <li class="sub-menu"><a href="#">Asia</a></li>
+                    <li class="sub-menu"><a href="#">Africa</a></li>
+                    <li class="sub-menu"><a href="#">Europe</a></li>
+                    <li class="sub-menu"><a href="#">America</a></li>
+                </ul>
+                </li>
+                <li><a href="#">About Us</a>
+                    <!-- First Tier Drop Down -->
+                    <ul>
+                        <li class="sub-menu"><a href="#">Our History</a></li>
+                        <li class="sub-menu"><a href="#">Contacts</a></li>
+                        <li class="sub-menu"><a href="#">Statistics</a></li>
+                    </ul>
+                </li>
+                <li id="search_button_li" onmouseover="change_visibility_sbutton(1)" onmouseout="change_visibility_sbutton(0)" ><a  href="#">Track your Cargo</a> <input id="search_button" type="text" style="visibility: hidden; position: absolute;" placeholder="Search.."></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <!--Title Image-->
+    <div class="titleHeader">
+        <img class="titleImage"src="../images/dest.jpg" style="width: 100%;" alt="">
+        <h2 class="titleText">DESTINATIONS</h2>
+        <p class="titleText2">The countries and regions we serve as Foreign Cargo are listed below.</p>
+    </div>
+    <!--Start Page Code-->
+    <section id="news"  >
+        <div class="newsBox" >
+          <div class="container">
+              <h4>Test</h4>
+              <p>sadönaskdbasbdksa</p>
+            </div>
+        </div>
+    </section>
+
+
+        <!--Footer-->
+        <footer>
+            <p>Designed by Demirkan Korbey Baglamac and Yusuf Anı</p>
+        </footer>
+        <!--Header Scroll Animation-->
+        <script>
+          window.onscroll = function() {scrollFunction()};
+          var loaders = document.getElementsByClassName('menua');
+    
+          function scrollFunction() {
+          if (window.screen.width > 768) {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("header").style.backgroundColor = "rgba(47, 72, 88, 1)";
+                  document.getElementById("header").style.minHeight = "60px";
+                  document.getElementById("header").style.paddingTop = "0.6%";
+                  document.getElementById("header").style.paddingBottom = "0";   
+                  document.getElementById("logo-image").style.display = "none";  
+                  document.getElementById("logo-text").style.marginTop = "0";
+                  document.getElementById("logo-text").style.marginLeft = "120px";
+                  document.getElementById("nav-menu").style.marginTop = "0";
+                  ar = document.querySelectorAll(".sub-menu");
+                  ar.forEach(element => {
+                    element.style.backgroundColor=  "rgba(47, 72, 88, 1)";
+                  });
+              }
+              else {
+                  document.getElementById("header").style.backgroundColor = "rgba(29, 29, 29, 0.4)";
+                  document.getElementById("header").style.minHeight = "70px";
+                  document.getElementById("header").style.paddingTop = "0"; 
+                  document.getElementById("header").style.paddingBottom = "30px"; 
+                  document.getElementById("logo-image").style.display = "inline"; 
+                  document.getElementById("logo-text").style.marginTop = "-80px";
+                  document.getElementById("logo-text").style.marginLeft = "120px";  
+                  document.getElementById("nav-menu").style.marginTop = "40px";
+                  console.log("Kaydırma" + document.querySelectorAll(".sub-menu"))
+                  ar = document.querySelectorAll(".sub-menu");
+                  ar.forEach(element => {
+                    element.style.backgroundColor=  "rgba(29, 29, 29, 0.2)";
+                  });
+              }
+          }
+      }        
+      </script>
+</body>
+</html>
