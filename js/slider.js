@@ -8,7 +8,7 @@ var slider_infos = {
     "five":  ["../images/sliders/slide5.jpg","5"]
 }
 
-current_idx = 1
+current_idx = 0
 
 window.addEventListener('DOMContentLoaded', (event) => {
 
