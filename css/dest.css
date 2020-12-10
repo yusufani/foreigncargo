@@ -1,0 +1,52 @@
+.title-hr hr {
+    display: inline-block;
+    width: 30%;
+    margin: 5px 10px;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+  
+.dest_title {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+.dest_title  p {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    background: #ffffff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    transition: #000000 0.2s ease-out;
+    white-space: nowrap;
+  }
+  
+  .dest_title  span {
+    position: relative;
+  }
+  
+  .dest_title span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: #000;
+    bottom: 9px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .dest_title p:hover {
+    background-position: 0 11px;
+  }
+  
+  .dest_title span:hover:before {
+    transform: translateY(10px)
+  }

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Source+Sans+Pro" rel="stylesheet">
     <!--Image Slider-->
     <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
     <style>
         header {
             top: 0;
@@ -52,9 +53,10 @@
                             <li><a href="#">Our Branches</a></li>
                             <li><a href="#">Contacts</a></li>
                             <li><a href="#">Statistics</a></li>
-                        </ul>
+                        </ul>   
                     </li>
-                    <li><a href="#">Track your Cargo</a></li>
+                    <li onmouseover="change_visibility_sbutton(1)" onmouseout="change_visibility_sbutton(0)" ><a  href="#">Track your Cargo</a>  <input id="search_button" type="text" style="display: none;" placeholder="Search..">
+                    </li>
                 </ul>
             </nav>
         </div>
