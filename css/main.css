@@ -82,7 +82,7 @@ header nav ul ul li {
 	float:none;
 	display:list-item;
     position: relative;
-    background-color: rgba(12, 71, 103, 1);
+    background-color: rgb(41, 41, 41);
 }
 
 /* Second, Third and more Tiers	*/
@@ -97,11 +97,11 @@ header li > a:after { content:  ' +'; }
 header li > a:only-child:after { content: ''; }
 /*-----------ImageSlide-----------*/
 .imageSlide {
-    background-size:cover;
     position: relative;
     min-height: 700px;
     text-align: center;
     color: #fff;   
+    background-attachment: fixed;
     background: url() no-repeat ;
 }
 .imageSlidePage {
@@ -110,7 +110,7 @@ header li > a:only-child:after { content: ''; }
     right: 0%;
     /*height: 145px;*/
     padding: 20px;
-    background-color: rgb(12, 71, 103);
+    background-color: rgb(41, 41, 41);
     font-family: 'Source Sans Pro', sans-serif;
 }
 .imageSlidePage h2 {
@@ -138,7 +138,7 @@ header li > a:only-child:after { content: ''; }
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgb(12, 71, 103);
+    background-color: rgb(41, 41, 41);
 }
   
 /* Position the "next button" to the right */
