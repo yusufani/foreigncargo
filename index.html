@@ -15,48 +15,46 @@
             top: 0;
         }
     </style>
-    <title>Akym Development</title>
+    <title>Foreign Cargo</title>
 </head>
 <body>
-    <!--Header-->
-    <header id="header">
+       <!--Header-->
+       <header id="header">
         <div class="container">
-            <div id="logo">
+            <div id="logo" style = "cursor: pointer;" onclick="location.href='index.html';">
                 <img id="logo-image" src="images/logo_tran_200x200.png"></img>
                 <h1 id="logo-text">Foreign Cargo</h1>
             </div>
             <!--Navigation Bar-->
             <nav id="nav-menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Fleet</a>
                     <!-- First Tier Drop Down -->
                     <ul>
-                        <li><a href="#">Aerial</a></li>
-                        <li><a href="#">Ships</a></li>
-                        <li><a href="#">Trucks</a></li>
+                        <li class="sub-menu"><a href="#">Aerial</a></li>
+                        <li class="sub-menu"><a href="#">Ships</a></li>
+                        <li class="sub-menu"><a href="#">Trucks</a></li>
                     </ul>        
                     </li>
-                    <li><a href="#">Destinations</a>
+                    <li><a href="htmls/destinations.html">Destinations</a>
                     <!-- First Tier Drop Down -->
                     <ul>
-                        <li><a href="#">Asia</a></li>
-                        <li><a href="#">Africa</a></li>
-                        <li><a href="#">Europe</a></li>
-                        <li><a href="#">America</a></li>
+                        <li class="sub-menu"><a href="#">Asia</a></li>
+                        <li class="sub-menu"><a href="#">Africa</a></li>
+                        <li class="sub-menu"><a href="#">Europe</a></li>
+                        <li class="sub-menu"><a href="#">America</a></li>
                     </ul>
                     </li>
                     <li><a href="#">About Us</a>
                         <!-- First Tier Drop Down -->
                         <ul>
-                            <li><a href="#">Our History</a></li>
-                            <li><a href="#">Our Branches</a></li>
-                            <li><a href="#">Contacts</a></li>
-                            <li><a href="#">Statistics</a></li>
-                        </ul>   
+                            <li class="sub-menu"><a href="#">Our History</a></li>
+                            <li class="sub-menu"><a href="#">Contacts</a></li>
+                            <li class="sub-menu"><a href="#">Statistics</a></li>
+                        </ul>
                     </li>
                     <li onmouseover="change_visibility_sbutton(1)" onmouseout="change_visibility_sbutton(0)" ><a  href="#">Track your Cargo</a>  <input id="search_button" type="text" style="display: none;" placeholder="Search..">
-                    </li>
                 </ul>
             </nav>
         </div>
@@ -75,25 +73,85 @@
     <section id="smallBoxes" >
         <div class="container">
             <div class="smallBox">
-                <img src="images/logoBol.png" alt="bolVal for IOS">
-                <h3>100%</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique voluptatum officiis doloribus at dolore perspiciatis commodi nisi? Iste quasi quos beatae, praesentium dolorem consequuntur nobis enim adipisci doloremque in!</p>
+                <img src="images/logoBol.png" alt="Hygienic Cargo">
+                <h3>Hygienic Cargo</h3>
+                <p>We are providing standard operating procedures for training, cleaning, pest management and container storage, as well as conducting regular internal audits. The department and MPI will conduct a 6-monthly or yearly audit depending on the compliance history.</p>
             </div>
             <div class="smallBox">
-                <img src="images/logoSecurity.png" alt="sogIC Security"> 
-                <h3>sogIC Security</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nesciunt, nisi perferendis eos a dolorem. Neque iste aliquid sed commodi esse amet, odio dolore laboriosam obcaecati vitae corporis beatae nam!</p>                    
+                <img src="images/logoSecurity.png" alt="Worldwide Corg"> 
+                <h3>Worldwide Corgo</h3>
+                <p>We have the biggest cargo in the world. With our filo we serve you globally, on air, water and roads.</p>                    
             </div>
             <div class="smallBox">
-                <img src="images/logoOne.png" alt="oneLiter desktop">
-                <h3>oneLiter Desktop</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit! Impedit inventore, a quibusdam, autem alias modi dolorem vel fugit nisi eaque quo omnis rem iusto deleniti recusandae, perferendis expedita!<pre>   </pre> </p>         
+                <img src="images/logoOne.png" alt="Secure Cargo">
+                <h3>Secure Cargo</h3>
+                <p>Whether on a truck, in a warehouse, or at a port, your shipments are vulnerable to theft. We provide the most secure cargo chain in the world for you. <pre>   </pre> </p>         
+            </div>
+        </div>
+    </section>
+    <!--Top Destinations-->
+    <section id="news">
+        <div class="newsBox">
+            <h4 class="title-hr" style="font-size: 40px;"><hr />Our Top Destinations<hr /></h4> 
+        </div>
+        <div class="newsBox">
+            <div class="container" style="width: 80%;">
+                <h4 style = "padding-bottom: 20px;">GERMANY</h4>   
+                <table class="newsTable">
+                    <tr>
+                        <td><img src="images/germany.png" style="width: 250px;"></td>
+                        <td>
+                            <ul>
+                                <li>We have 13 Distribution Centers all around Germany ready to serve.</li>
+                                <li>Ever year we transfer around 1 million cargos to Germany.</li>
+                                <li>We work with the top Germany firms.</li>
+                                <li style="list-style: none;"><a href="#" class="infoBtn" style="background-color: #F26419;">More information.</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="newsBox">
+            <div class="container" style="width: 80%;">
+                <h4 style = "padding-bottom: 20px;">TURKEY</h4>   
+                <table class="newsTable">
+                    <tr>
+                        <td><img src="images/turkey.png" style="width: 500px;"></td>
+                        <td>
+                            <ul>
+                                <li>We have 8 Massive Distribution Centers in Turkey serving you.</li>
+                                <li>Ever year we transfer around 2 million cargos to Turkey.</li>
+                                <li>We work with Yemeksepeti, hepsiburada, two biggest e-shop sites in the Turkey.</li>
+                                <li style="list-style: none;"><a href="#" class="infoBtn">More information.</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="newsBox">
+            <div class="container" style="width: 80%;">
+                <h4 style = "padding-bottom: 20px;">CZECH REPUBLIC</h4>   
+                <table class="newsTable">
+                    <tr>
+                        <td><img src="images/cz.png" style="width: 500px;"></td>
+                        <td>
+                            <ul>
+                                <li>We have 9 Distribution Centers in Czech Republic for your service.</li>
+                                <li>Ever year we transfer around 1 million cargos to Germany.</li>
+                                <li>We work with the top firms in Czech Republic. Some of them are Alca.cz, pepco etc.</li>
+                                <li style="list-style: none;"><a href="#" class="infoBtn" style="background-color: #F26419;">More information.</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </section>
     <!--Footer-->
     <footer>
-        <p>Korbey Web Design</p>
+        <p>Designed by Demirkan Korbey Baglamac and Yusuf Anı</p>
     </footer>
     <!--Header Scroll Animation-->
     <script>
@@ -103,22 +161,33 @@
         function scrollFunction() {
         if (window.screen.width > 768) {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("header").style.backgroundColor = "rgba(35,35,35,1)";
+                document.getElementById("header").style.backgroundColor = "rgba(47, 72, 88, 1)";
                 document.getElementById("header").style.minHeight = "60px";
-                document.getElementById("header").style.paddingTop = "0.6%";  
+                document.getElementById("header").style.paddingTop = "0.6%";
+                document.getElementById("header").style.paddingBottom = "0";   
                 document.getElementById("logo-image").style.display = "none";  
-                document.getElementById('logo-text').style.marginTop = '0';
-                document.getElementById('logo-text').style.marginLeft = '0';
-                document.getElementById('nav-menu').style.marginTop = '0';
+                document.getElementById("logo-text").style.marginTop = "0";
+                document.getElementById("logo-text").style.marginLeft = "120px";
+                document.getElementById("nav-menu").style.marginTop = "0";
+                ar = document.querySelectorAll(".sub-menu");
+                ar.forEach(element => {
+                  element.style.backgroundColor=  "rgba(47, 72, 88, 1)";
+                });
             }
             else {
-                document.getElementById("header").style.backgroundColor = "rgba(35,35,35,0)";
+                document.getElementById("header").style.backgroundColor = "rgba(29, 29, 29, 0.2)";
                 document.getElementById("header").style.minHeight = "70px";
-                document.getElementById("header").style.paddingTop = "0.8%"; 
+                document.getElementById("header").style.paddingTop = "0"; 
+                document.getElementById("header").style.paddingBottom = "30px"; 
                 document.getElementById("logo-image").style.display = "inline"; 
-                document.getElementById('logo-text').style.marginTop = '-80px';
-                document.getElementById('logo-text').style.marginLeft = '120px';  
-                document.getElementById('nav-menu').style.marginTop = '40px';
+                document.getElementById("logo-text").style.marginTop = "-80px";
+                document.getElementById("logo-text").style.marginLeft = "120px";  
+                document.getElementById("nav-menu").style.marginTop = "40px";
+                console.log("Kaydırma" + document.querySelectorAll(".sub-menu"))
+                ar = document.querySelectorAll(".sub-menu");
+                ar.forEach(element => {
+                  element.style.backgroundColor=  "rgba(29, 29, 29, 0.2)";
+                });
             }
         }
     }        
