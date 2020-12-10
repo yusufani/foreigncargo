@@ -18,9 +18,11 @@ header {
     position: fixed;
     top: 0;
     min-height: 70px;
-    padding-top: 0.8%;
+    padding-top: 0;
+    background-color: rgba(47, 72, 88, 0.1);
     width: 100%;
     margin: auto;
+    padding-bottom: 20px;
     z-index: 2;
     transition: background-color 0.2s, min-height 0.2s, padding-top 0.2s;
     -webkit-transition: background-color 0.2s, min-height 0.2s, padding-top 0.2s;     
@@ -55,6 +57,7 @@ header nav ul li {
 header nav a {
     display:block;
     color: rgb(241,241,241);
+    font-size: 18px;
     padding-top: 4px;
     text-decoration:none;
     transition: color 0.3s ease-in;
@@ -82,7 +85,7 @@ header nav ul ul li {
 	float:none;
 	display:list-item;
     position: relative;
-    background-color: #2F4858;
+    background-color: rgba(29, 29, 29, 0.2);
 }
 
 /* Second, Third and more Tiers	*/
@@ -110,7 +113,7 @@ header li > a:only-child:after { content: ''; }
     right: 0%;
     /*height: 145px;*/
     padding: 20px;
-    background-color: rgb(41, 41, 41);
+    background-color: rgba(29, 29, 29, 0.5);
     font-family: 'Source Sans Pro', sans-serif;
 }
 .imageSlidePage h2 {

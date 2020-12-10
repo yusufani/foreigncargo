@@ -11,7 +11,7 @@
     <script src="js/slider.js"></script>
     <!--Top Destination Slider-->
     <script src="js/topDestination.js"></script>
-    <title>Akym Development</title>
+    <title>Forign Cargo</title>
 </head>
 <body>
     <!--Header-->
@@ -28,27 +28,26 @@
                     <li><a href="#">Fleet</a>
                     <!-- First Tier Drop Down -->
                     <ul>
-                        <li><a href="#">Aerial</a></li>
-                        <li><a href="#">Ships</a></li>
-                        <li><a href="#">Trucks</a></li>
+                        <li class="sub-menu"><a href="#">Aerial</a></li>
+                        <li class="sub-menu"><a href="#">Ships</a></li>
+                        <li class="sub-menu"><a href="#">Trucks</a></li>
                     </ul>        
                     </li>
                     <li><a href="htmls/destinations.html">Destinations</a>
                     <!-- First Tier Drop Down -->
                     <ul>
-                        <li><a href="#">Asia</a></li>
-                        <li><a href="#">Africa</a></li>
-                        <li><a href="#">Europe</a></li>
-                        <li><a href="#">America</a></li>
+                        <li class="sub-menu"><a href="#">Asia</a></li>
+                        <li class="sub-menu"><a href="#">Africa</a></li>
+                        <li class="sub-menu"><a href="#">Europe</a></li>
+                        <li class="sub-menu"><a href="#">America</a></li>
                     </ul>
                     </li>
                     <li><a href="#">About Us</a>
                         <!-- First Tier Drop Down -->
                         <ul>
-                            <li><a href="#">Our History</a></li>
-                            <li><a href="#">Our Branches</a></li>
-                            <li><a href="#">Contacts</a></li>
-                            <li><a href="#">Statistics</a></li>
+                            <li class="sub-menu"><a href="#">Our History</a></li>
+                            <li class="sub-menu"><a href="#">Contacts</a></li>
+                            <li class="sub-menu"><a href="#">Statistics</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Track your Cargo</a></li>
@@ -158,22 +157,33 @@
         function scrollFunction() {
         if (window.screen.width > 768) {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("header").style.backgroundColor = "#2F4858";
+                document.getElementById("header").style.backgroundColor = "rgba(47, 72, 88, 1)";
                 document.getElementById("header").style.minHeight = "60px";
-                document.getElementById("header").style.paddingTop = "0.6%";  
+                document.getElementById("header").style.paddingTop = "0.6%";
+                document.getElementById("header").style.paddingBottom = "0";   
                 document.getElementById("logo-image").style.display = "none";  
-                document.getElementById('logo-text').style.marginTop = '0';
-                document.getElementById('logo-text').style.marginLeft = '0';
-                document.getElementById('nav-menu').style.marginTop = '0';
+                document.getElementById("logo-text").style.marginTop = "0";
+                document.getElementById("logo-text").style.marginLeft = "120px";
+                document.getElementById("nav-menu").style.marginTop = "0";
+                ar = document.querySelectorAll(".sub-menu");
+                ar.forEach(element => {
+                  element.style.backgroundColor=  "rgba(47, 72, 88, 1)";
+                });
             }
             else {
-                document.getElementById("header").style.backgroundColor = "rgba(35,35,35,0)";
+                document.getElementById("header").style.backgroundColor = "rgba(29, 29, 29, 0.2)";
                 document.getElementById("header").style.minHeight = "70px";
-                document.getElementById("header").style.paddingTop = "0.8%"; 
+                document.getElementById("header").style.paddingTop = "0"; 
+                document.getElementById("header").style.paddingBottom = "30px"; 
                 document.getElementById("logo-image").style.display = "inline"; 
-                document.getElementById('logo-text').style.marginTop = '-80px';
-                document.getElementById('logo-text').style.marginLeft = '120px';  
-                document.getElementById('nav-menu').style.marginTop = '40px';
+                document.getElementById("logo-text").style.marginTop = "-80px";
+                document.getElementById("logo-text").style.marginLeft = "120px";  
+                document.getElementById("nav-menu").style.marginTop = "40px";
+                console.log("Kaydırma" + document.querySelectorAll(".sub-menu"))
+                ar = document.querySelectorAll(".sub-menu");
+                ar.forEach(element => {
+                  element.style.backgroundColor=  "rgba(29, 29, 29, 0.2)";
+                });
             }
         }
     }        
