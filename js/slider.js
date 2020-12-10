@@ -37,7 +37,8 @@ function change_slide(idx){
     slide_title.innerHTML+="</pre>"
     
     slide_text.textContent=slider_infos[key][1]
-    $('.imageSlide').css('background', 'url("'+slider_infos[key][0]+'") no-repeat ');
+    $('.imageSlide').css('background', 'url("'+slider_infos[key][0]+'") no-repeat   ');
+    $('.imageSlide').css('background-size', 'cover');
 }
 
 
