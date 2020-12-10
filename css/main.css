@@ -16,10 +16,13 @@ body {
 /*-----------Header-----------*/
 header {
     position: fixed;
+    top: 0;
     min-height: 70px;
-    padding-top: 0.8%;
+    padding-top: 0;
+    background-color: rgba(47, 72, 88, 0.1);
     width: 100%;
     margin: auto;
+    padding-bottom: 20px;
     z-index: 2;
     transition: background-color 0.2s, min-height 0.2s, padding-top 0.2s;
     -webkit-transition: background-color 0.2s, min-height 0.2s, padding-top 0.2s;     
@@ -54,6 +57,7 @@ header nav ul li {
 header nav a {
     display:block;
     color: rgb(241,241,241);
+    font-size: 18px;
     padding-top: 4px;
     text-decoration:none;
     transition: color 0.3s ease-in;
@@ -81,7 +85,7 @@ header nav ul ul li {
 	float:none;
 	display:list-item;
     position: relative;
-    background-color: rgb(41, 41, 41);
+    background-color: rgba(29, 29, 29, 0.2);
 }
 
 /* Second, Third and more Tiers	*/
@@ -109,7 +113,7 @@ header li > a:only-child:after { content: ''; }
     right: 0%;
     /*height: 145px;*/
     padding: 20px;
-    background-color: rgb(41, 41, 41);
+    background-color: rgba(29, 29, 29, 0.5);
     font-family: 'Source Sans Pro', sans-serif;
 }
 .imageSlidePage h2 {
@@ -188,8 +192,8 @@ header li > a:only-child:after { content: ''; }
     padding-right: 20px;
     margin-left: 2.5%;
 }
-#smallBoxes img {
-    width: 130px;
+#smallBoxes img  {
+    width: 140px;
     padding: 20px;
 }
 #smallBoxes h3 {
@@ -211,8 +215,12 @@ header li > a:only-child:after { content: ''; }
     padding: 40px;
 }
 #news .newsBox:nth-of-type(even) {
+<<<<<<< HEAD
     background-color: #003f5a
     ;
+=======
+    background-color: #003f5a;
+>>>>>>> demirkan
 }
 #news .newsBox h4 {
     font-size: 40px;
@@ -224,6 +232,29 @@ header li > a:only-child:after { content: ''; }
     padding: 20px;
 }
 
+.newsTable {
+    width: 80%;
+    margin: auto;
+}
+.newsTable td {
+    width: 40%;
+}
+.newsTable li {
+    width: 50%;
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.title-hr hr {
+    display: inline-block;
+    width: 36%;
+    margin: 5px 10px;
+    border-top: 1px solid #e5e5e5;
+}
+.title-hr {
+    text-align: center;
+}
 /*-----------Download Button-----------*/
 .downloadButton {
     background-color: rgb(32, 46, 68);
@@ -239,6 +270,16 @@ header li > a:only-child:after { content: ''; }
     background-color: rgba(24, 34, 51, 0.842);
   }
 
+  .infoBtn {
+    background-color:    #003f5a;
+    border-radius: 11px;
+    padding:       15px 25px;
+    color:         #ffffff;
+    display:       inline-block;
+    text-align:    center;
+    text-decoration: none;
+  }
+ 
 /*-----------Footer-----------*/
 footer {
     padding: 20px;
