@@ -30,12 +30,17 @@ header #logo {
     color: rgb(241,241,241);
     display: inline;
 }
-header #logo img {
+header #logo-image {
     width: 120px;
     height: 120px;
 }
+header #logo-text {
+    margin-top: -80px;
+    margin-left: 120px;
+}
 header nav {
     float: right;
+    margin-top: 40px;
 }
 header nav ul {
     padding: 0;
@@ -77,7 +82,7 @@ header nav ul ul li {
 	float:none;
 	display:list-item;
     position: relative;
-    background-color: rgba(35,35,35,1);
+    background-color: rgba(12, 71, 103, 1);
 }
 
 /* Second, Third and more Tiers	*/
@@ -105,7 +110,7 @@ header li > a:only-child:after { content: ''; }
     right: 0%;
     /*height: 145px;*/
     padding: 20px;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(12, 71, 103);
     font-family: 'Source Sans Pro', sans-serif;
 }
 .imageSlidePage h2 {
@@ -133,7 +138,7 @@ header li > a:only-child:after { content: ''; }
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(12, 71, 103);
 }
   
 /* Position the "next button" to the right */
