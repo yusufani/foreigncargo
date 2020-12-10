@@ -101,7 +101,7 @@ header li > a:only-child:after { content: ''; }
     min-height: 700px;
     text-align: center;
     color: #fff;   
-    background: url() no-repeat -1600px -460px;
+    background: url() no-repeat ;
 }
 .imageSlidePage {
     position: absolute;
