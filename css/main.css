@@ -53,7 +53,7 @@ header nav a:hover {
     min-height: 700px;
     text-align: center;
     color: #fff;   
-    background: url('../images/bg.jpg') no-repeat -1600px -460px;
+    background: url() no-repeat -1600px -460px;
 }
 .imageSlidePage {
     position: absolute;

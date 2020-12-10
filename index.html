@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Source+Sans+Pro" rel="stylesheet">
     <!--Image Slider-->
-    <script src="js/slider.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     <title>Akym Development</title>
 </head>
 <body>
@@ -29,14 +30,14 @@
         </div>
     </header>
     <!--Image Slide-->
-    <section class="imageSlide">
+    <section class="imageSlide" id="slide_image">
         <div class="imageSlidePage">
             <h2 id="imageHeader"><pre>London<br>    DevOps<br>        Meetup</pre></h2>
             <p id="imageText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ad enim quaerat earum placeat amet magnam. Commodi distinctio a esse voluptatem fugit! Eveniet illum nemo, ratione sint blanditiis dolorum recusandae.</p>
         </div>
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" >&#10094;</a>
+        <a class="next" >&#10095;</a>
     </section>
     <!--Small Box-->
     <section id="smallBoxes" >
@@ -82,5 +83,7 @@
                 }
             }
     </script>
+    <script src="js/slider.js"></script>
+
 </body>
 </html>
