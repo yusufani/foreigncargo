@@ -16,6 +16,7 @@ body {
 /*-----------Header-----------*/
 header {
     position: fixed;
+    top: 0;
     min-height: 70px;
     padding-top: 0.8%;
     width: 100%;
@@ -188,8 +189,8 @@ header li > a:only-child:after { content: ''; }
     padding-right: 20px;
     margin-left: 2.5%;
 }
-#smallBoxes img {
-    width: 130px;
+#smallBoxes img  {
+    width: 140px;
     padding: 20px;
 }
 #smallBoxes h3 {
@@ -221,6 +222,12 @@ header li > a:only-child:after { content: ''; }
     text-align: justify;
     width: 50%;
     padding: 20px;
+}
+
+/*-----------mySlides Top Dist.-----------*/
+/* Hide the images by default */
+.mySlides {
+    display: none;
 }
 
 /*-----------Download Button-----------*/
