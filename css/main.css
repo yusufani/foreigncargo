@@ -97,6 +97,7 @@ header li > a:after { content:  ' +'; }
 header li > a:only-child:after { content: ''; }
 /*-----------ImageSlide-----------*/
 .imageSlide {
+    background-size:cover;
     position: relative;
     min-height: 700px;
     text-align: center;
