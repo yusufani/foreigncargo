@@ -14,10 +14,8 @@ function change_visibility_sbutton(el){
     console.log(el)
     
     if (el === 0) {
-        console.log("Görünmez")
          search_button.style.visibility = "hidden";  
     }else{
-        console.log("Görünür")
         search_button.style.visibility = "visible";
     }
 
