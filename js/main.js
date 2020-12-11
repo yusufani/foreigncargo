@@ -4,7 +4,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     $("#search_button").on('keyup', function (e) {
         if (e.key === 'Enter' || e.keyCode === 13) {
             console.log(document.location)
-            //document.location.href = document.location.origin+"/htmls/tracking.html?"+search_button.value;
+            path = String(document.location.href )
+            var afterWith = path.substr(0, path.lastIndexOf("/") + 1);
+            document.location.href = afterWith+"/htmls/tracking.html?"+search_button.value;
         }
     });
 });
