@@ -1,17 +1,23 @@
 var search_button
 window.addEventListener('DOMContentLoaded', (event) => {
     search_button = document.getElementById("search_button")
-
-
+    $("#search_button").on('keyup', function (e) {
+        if (e.key === 'Enter' || e.keyCode === 13) {
+            console.log(document.location)
+            path = String(document.location.href )
+            var afterWith = path.substr(0, path.lastIndexOf("/") + 1);
+            document.location.href = afterWith+"/htmls/tracking.html?"+search_button.value;
+        }
+    });
 });
+
+
+
 function change_visibility_sbutton(el){
-    console.log(el)
     
     if (el === 0) {
-        console.log("Görünmez")
          search_button.style.visibility = "hidden";  
     }else{
-        console.log("Görünür")
         search_button.style.visibility = "visible";
     }
 
