@@ -307,6 +307,10 @@ footer p {
     font-size: 110%;
     font-weight: bold;
 }
+
+.mobile {
+    display: none;
+}
 /*-----------Responsive-----------*/
 @media(max-width: 1300px) {
     header #logo, header nav, header nav li,.imageSlideText, .imageSlideText h2, .imageSlideText p{
@@ -325,6 +329,10 @@ footer p {
         float: none;
         text-align: center;
         width: 100%;
+    }
+
+    .mobile {
+        display: block;
     }
 
     /* Hide Dropdowns by Default */
