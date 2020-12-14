@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     search_button = document.getElementById("search_button")
     $("#search_button").on('keyup', function (e) {
         if (e.key === 'Enter' || e.keyCode === 13) {
-            console.log(document.location)
+            //console.log(document.location)
             path = String(document.location.href )
             fields = path.split("/")
             new_path = fields[0]+"/"+fields[1]+"/"+fields[2]
