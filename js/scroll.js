@@ -2,13 +2,12 @@
 
 window.onscroll = function() 
 {
-        scrollFunction();
+    scrollFunction();
 }
 
 var loaders = document.getElementsByClassName('menua');
 
 function scrollFunction() {
-if (window.screen.width > 768) {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("header").style.backgroundColor = "rgba(47, 72, 88, 1)";
         document.getElementById("header").style.minHeight = "60px";
@@ -37,5 +36,4 @@ if (window.screen.width > 768) {
           element.style.backgroundColor=  "rgba(29, 29, 29, 0.2)";
         });
     }
-}
-}    
+} 
