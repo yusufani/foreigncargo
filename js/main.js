@@ -5,8 +5,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
         if (e.key === 'Enter' || e.keyCode === 13) {
             console.log(document.location)
             path = String(document.location.href )
-            var afterWith = path.substr(0, path.lastIndexOf("/") + 1);
-            document.location.href = afterWith+"/htmls/tracking.html?"+search_button.value;
+            fields = path.split("/")
+            new_path = fields[0]+"/"+fields[1]+"/"+fields[2]
+            if (fields[3] == "foreigncargo" ) {
+                new_path+="/"+fields[3]
+            }
+            new_path+="/htmls/tracking.html?"+search_button.value;
+            document.location.href = new_path;
+            //var afterWith = path.substr(0, path.lastIndexOf("/") + 1);
+            //document.location.href = afterWith+"/htmls/tracking.html?"+search_button.value;
         }
     });
 });
