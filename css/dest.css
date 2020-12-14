@@ -11,8 +11,24 @@
 table {
     margin: auto;
 }
-td{
+@media(max-width: 900px) {
+    /* Responsive */ 
+      table{
+        width:100%;
+    }
 
+    td{
+        display:block;
+        width:100%;
+    }
+
+    tr{
+        display:block;
+        margin-bottom:30px;
+    }
+}
+
+td{
     margin: auto;
     padding: 10px;
 }
