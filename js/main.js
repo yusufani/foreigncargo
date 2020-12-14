@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 function change_visibility_sbutton(el){
-    
+    console.log(el)
     if (el === 0) {
          search_button.style.visibility = "hidden";  
     }else{
