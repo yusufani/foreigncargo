@@ -263,7 +263,7 @@ header li > a:only-child:after { content: ''; }
 
 .title-hr hr {
     display: inline-block;
-    width: 36%;
+    width: 30%;
     margin: 5px 10px;
     border-top: 1px solid #e5e5e5;
 }
