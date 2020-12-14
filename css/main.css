@@ -108,13 +108,13 @@ header li > a:only-child:after { content: ''; }
 .titleText {
     position: absolute;
     font-size: 100px;
-    top: 75%;
+    bottom: 10%;
     left: 8%;
 }
 .titleText2 {
     position: absolute;
     font-size: 20px;
-    top: 92%;
+    bottom: 8%;
     left: 8.5%;
 }
 
@@ -308,15 +308,61 @@ footer p {
     font-weight: bold;
 }
 /*-----------Responsive-----------*/
-@media(max-width: 768px) {
-    header .logo, header nav, header nav li,.imageSlideText, .imageSlideText h2, .imageSlideText p{
+@media(max-width: 1300px) {
+    header #logo, header nav, header nav li,.imageSlideText, .imageSlideText h2, .imageSlideText p{
         float: none;
         text-align: center;
         width: 100%;
     }
+    header #logo {
+       display: block;
+    }
+    header #logo-text {
+        display: none;
+    }
+
     #smallBoxes .smallBox {
         float: none;
         text-align: center;
         width: 100%;
+    }
+
+    /* Hide Dropdowns by Default */
+    header nav ul ul {
+        display: none;
+    }
+    
+    /* Second, Third and more Tiers	*/
+    header nav ul ul ul li {
+        display: none;
+    }
+    
+    /* Change this in order to change the Dropdown symbol */
+    header li > a:after { content:  ''; }
+    header li > a:only-child:after { content: ''; }
+
+    .newsTable tr td {
+        display: block;
+        width: 100%;
+        margin: auto;   
+    }
+    .newsTable tr ul {
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    
+    .title-hr hr {
+        display: none;
+    }
+
+    .titleHeader {
+        display: none;
+    }
+    
+    .titleText {
+        display: none;
+    }
+    .titleText2 {
+        display: none;
     }
 }

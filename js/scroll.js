@@ -2,10 +2,8 @@
 
 window.onscroll = function() 
 {
-    var w = window.innerWidth;
-    if ( w < 1200){
-        scrollFunction()};
-    }
+        scrollFunction();
+}
 
 var loaders = document.getElementsByClassName('menua');
 
