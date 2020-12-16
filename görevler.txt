@@ -1,2 +1,0 @@
-media a menu ortala
-<li onmouseover="change_visibility_sbutton(1)" onmouseout="change_visibility_sbutton(0)" ><a  href="#">Track your Cargo</a>  <input id="search_button" type="text" style="display: none;" placeholder="Search..">
